@@ -1,6 +1,14 @@
 body {
     min-width: 768px;
 
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+
     background-color: #f2f2f2;
 }
 
@@ -15,6 +23,8 @@ body {
 	max-width: 1200px;
     margin: 0 auto;
 
+    color: #000000;
+
     background-color: #ffffff;
 }
 
@@ -28,6 +38,10 @@ body {
 
 
 /*Хэдер*/
+
+.main-header {
+	position: relative;
+}
 
 .site-logo {
 	position: absolute;
@@ -50,6 +64,7 @@ body {
     padding-top: 16px;
     padding-bottom: 18px;
 
+    vertical-align: top;
     font-size: 14px;
 
 	list-style: none;
@@ -59,7 +74,10 @@ body {
 	margin-left: 6%;
 }
 
-.main-menu li:nth-child(2),
+.main-menu li:nth-child(2) {
+    margin-right: 8%;
+}
+
 .main-menu li:last-child {
     margin-right: 6%;
 }
@@ -70,13 +88,15 @@ body {
 
 .main-menu li a {
 	text-decoration: none;
+    color: inherit;
+    font-weight: 700;
 }
 
 .sedona-promo {
     min-height: 434px;
 	padding-top: 76px;
 
-    background: #dfecf5 url(../img/header-background.jpg);
+    background: #dfecf5 url(../img/header-background.jpg) no-repeat center 30%;
     background-size: 100%;
 }
 
