@@ -120,6 +120,10 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin: 29px 0;
+}
+
 main {
     padding-top: 60px;
 }
@@ -180,7 +184,11 @@ main {
 
 .index-content-features .feature {
     float: left;
-    width: 33%;
+    width: 23%;
+    padding: 0 5%;
+    padding-top: 60px;
+
+    text-align: center;
 }
 
 .index-content-reason-short {
