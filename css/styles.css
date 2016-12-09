@@ -109,14 +109,69 @@ body {
 
 /*Контент*/
 
+h1 {
+    max-width: 576px;
+    margin: 0 auto;
+    margin-bottom: 31px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+main {
+    padding-top: 60px;
+}
+
+.reasons {
+    margin-bottom: 58px;
+
+    line-height: 26px;
+    text-align: center;
+}
+
 .index-content-reason-text {
-	width: 33%;
-    min-height: 256px;
+	width: 23%;
+    min-height: 206px;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    color: #ffffff;
+    text-align: center;
+
+    background-color: #81b3d2;
+}
+
+.index-content-reason-title {
+    display: block;
+    margin-bottom: 28px;
+
+	font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.index-content-reason-number {
+    display: block;
+    margin-bottom: 25px;
 }
 
 .index-content-reason-image {
 	width: 67%;
     min-height: 256px;
+}
+
+.index-content-reason-1 .index-content-reason-image {
+	background: #a6b3a1 url(../img/sedona-city.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.index-content-reason-2 .index-content-reason-image {
+	background: #a6b3a1 url(../img/devils-canyon.jpg) no-repeat center center;
+    background-size: 100%;
 }
 
 .index-content-features {
