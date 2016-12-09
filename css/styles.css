@@ -96,7 +96,8 @@ body {
     min-height: 434px;
 	padding-top: 76px;
 
-    background: #dfecf5 url(../img/header-background.jpg) no-repeat center 30%;
+    background: url(../img/mask.png) no-repeat center bottom,
+                #dfecf5 url(../img/header-background.jpg) no-repeat center 30%;
     background-size: 100%;
 }
 
