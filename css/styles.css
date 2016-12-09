@@ -14,4 +14,62 @@ body {
 .container {
 	max-width: 1200px;
     margin: 0 auto;
+
+    background-color: #ffffff;
+}
+
+.site-logo {
+	position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.main-menu ul {
+	margin: 0;
+    padding: 0;
+
+    font-size: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+    width: 20%;
+    padding-top: 16px;
+    padding-bottom: 18px;
+
+    font-size: 14px;
+
+	list-style: none;
+}
+
+.main-menu li:first-child {
+	margin-left: 6%;
+}
+
+.main-menu li:nth-child(2),
+.main-menu li:last-child {
+    margin-right: 6%;
+}
+
+.main-menu li:nth-child(n+3) {
+    text-align: right;
+}
+
+.main-menu li a {
+	text-decoration: none;
+}
+
+.sedona-promo {
+    min-height: 434px;
+	padding-top: 76px;
+
+    background: #dfecf5 url(../img/header-background.jpg);
+    background-size: 100%;
+}
+
+.sedona-promo .index-logo {
+    font-size: 0;
+    text-align: center;
 }
