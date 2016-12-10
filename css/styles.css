@@ -310,6 +310,7 @@ main {
 	vertical-align: middle;
 }
 
+/*
 .footer-copyright a {
     display: inline-block;
     height: 39px;
@@ -317,6 +318,7 @@ main {
     line-height: 26px;
 	vertical-align: middle;
 }
+*/
 
 
 /*Кнопки*/
@@ -361,6 +363,34 @@ main {
 
 .social-btn:last-child {
     margin-right: 0;
+}
+
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.social-btn:active i {
+	opacity: 0.3;
+}
+
+.copyright-btn {
+    display: inline-block;
+	width: 113px;
+    height: 39px;
+
+    vertical-align: middle;
+
+    background: transparent url(../img/sprites.png) no-repeat 0 0;
+}
+
+.copyright-btn:hover {
+	background-position: 0 -50px;
+
+    transition: background-position 0.4s;
+}
+
+.copyright-btn:active {
+	background-position: 0 -100px;
 }
 
 
