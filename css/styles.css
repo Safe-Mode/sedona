@@ -92,6 +92,14 @@ body {
     font-weight: 700;
 }
 
+.main-menu li a:hover {
+	color: #81b3d2;
+}
+
+.main-menu li a:active {
+	opacity: 0.3;
+}
+
 .sedona-promo {
     min-height: 434px;
 	padding-top: 76px;
