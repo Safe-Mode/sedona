@@ -157,7 +157,6 @@ main {
     line-height: 21px;
     font-weight: 700;
     text-align: center;
-    color: #000000;
 }
 
 .index-content-reason-number {
@@ -208,12 +207,30 @@ main {
     text-align: center;
 }
 
+.index-content-reason-short .index-content-reason-title {
+	color: #000000;
+}
+
 .index-search {
     min-height: 291px;
+    padding-top: 55px;
 
 	text-align: center;
 }
 
+.index-search-title {
+    display: block;
+    margin-bottom: 29px;
+
+	font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.index-search p {
+	margin-bottom: 49px;
+}
 
 /*Футер*/
 
@@ -236,4 +253,34 @@ main {
     width: 33%;
 
     text-align: center;
+}
+
+
+/*Кнопки*/
+
+.btn {
+    display: inline-block;
+    padding: 5px 15px;
+
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-brown {
+    background-color: #766357;
+}
+
+.btn-blue {
+    background-color: #81b3d2;
+}
+
+.btn-hotels-search {
+    padding: 32px 140px;
+
+    font-size: 21px;
+    line-height: 26px;
 }
