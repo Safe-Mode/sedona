@@ -191,10 +191,19 @@ main {
     text-align: center;
 }
 
+.index-content-reason-row {
+	min-height: 256px;
+
+    background-color: #eeeeee;
+}
+
 .index-content-reason-short {
 	float: left;
-    width: 33%;
-    min-height: 256px;
+    width: 21.93%;
+    padding: 0 5.7%;
+    padding-top: 50px;
+
+    text-align: center;
 }
 
 .index-search {
