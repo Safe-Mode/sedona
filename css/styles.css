@@ -7,7 +7,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #000000;
+    color: #333333;
 
     background-color: #f2f2f2;
 }
@@ -20,12 +20,13 @@ body {
 }
 
 .container {
+    position: relative;
+
 	max-width: 1200px;
     margin: 0 auto;
 
-    color: #000000;
-
     background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 }
 
 .to-left {
@@ -88,8 +89,16 @@ body {
 
 .main-menu li a {
 	text-decoration: none;
-    color: inherit;
+    color: #000000;
     font-weight: 700;
+}
+
+.main-menu li a:hover {
+	color: #81b3d2;
+}
+
+.main-menu li a:active {
+	opacity: 0.3;
 }
 
 .sedona-promo {
@@ -118,10 +127,13 @@ h1 {
     line-height: 26px;
     font-weight: 700;
     text-align: center;
+    color: #000000;
 }
 
 h2 {
     margin: 29px 0;
+
+    color: #000000;
 }
 
 main {
@@ -191,26 +203,75 @@ main {
     text-align: center;
 }
 
+.index-content-reason-row {
+	min-height: 256px;
+
+    background-color: #eeeeee;
+}
+
 .index-content-reason-short {
 	float: left;
-    width: 33%;
-    min-height: 256px;
+    width: 21.93%;
+    padding: 0 5.7%;
+    padding-top: 50px;
+
+    text-align: center;
+}
+
+.index-content-reason-short .index-content-reason-title {
+	color: #000000;
 }
 
 .index-search {
-    min-height: 291px;
+    min-height: 236px;
+    padding-top: 55px;
 
 	text-align: center;
 }
 
+.index-search-title {
+    display: block;
+    margin-bottom: 29px;
+
+	font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.index-search p {
+	margin-bottom: 49px;
+}
 
 /*Футер*/
+
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 48px;
+	padding: 36px 0;
+
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
+}
 
 .footer-hashtag {
 	float: left;
     width: 33%;
+    margin-top: 13px;
 
     text-align: center;
+}
+
+.footer-hashtag a {
+    font-size: 21px;
+    line-height: 26px;
+	text-decoration: none;
+    color: #000000;
+    font-weight: 700;
 }
 
 .footer-social {
@@ -218,11 +279,160 @@ main {
     width: 33%;
 
     text-align: center;
+    font-size: 0;
+}
+
+.footer-social a {
+    font-size: 19px;
+    line-height: 48px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.footer-social .icon-youtube {
+    font-size: 23px;
 }
 
 .footer-copyright {
 	float: right;
     width: 33%;
+    margin-top: 4.5px;
 
     text-align: center;
+    font-size: 0;
 }
+
+.footer-copyright span {
+    display: inline-block;
+    margin-right: 8px;
+
+    font-size: 14px;
+    line-height: 26px;
+	vertical-align: middle;
+}
+
+/*
+.footer-copyright a {
+    display: inline-block;
+    height: 39px;
+
+    line-height: 26px;
+	vertical-align: middle;
+}
+*/
+
+
+/*Кнопки*/
+
+.btn {
+    display: inline-block;
+    padding: 5px 15px;
+
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-brown {
+    background-color: #766357;
+}
+
+.btn-blue {
+    background-color: #81b3d2;
+}
+
+.btn-hotels-search {
+    padding: 32px 140px;
+
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.social-btn {
+    display: inline-block;
+    margin-right: 6px;
+	width: 46px;
+    height: 48px;
+
+    vertical-align: top;
+
+    background-color: #81b3d2;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
+}
+
+.social-btn:hover {
+    background-color: #669ec0;
+}
+
+.social-btn:active i {
+	opacity: 0.3;
+}
+
+.copyright-btn {
+    display: inline-block;
+	width: 113px;
+    height: 39px;
+
+    vertical-align: middle;
+
+    background: transparent url(../img/sprites.png) no-repeat 0 0;
+}
+
+.copyright-btn:hover {
+	background-position: 0 -50px;
+
+    transition: background-position 0.4s;
+}
+
+.copyright-btn:active {
+	background-position: 0 -100px;
+}
+
+
+/*Иконочный шрифт*/
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
