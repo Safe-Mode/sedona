@@ -7,7 +7,7 @@ body {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
-    color: #000000;
+    color: #333333;
 
     background-color: #f2f2f2;
 }
@@ -22,8 +22,6 @@ body {
 .container {
 	max-width: 1200px;
     margin: 0 auto;
-
-    color: #000000;
 
     background-color: #ffffff;
 }
@@ -88,7 +86,7 @@ body {
 
 .main-menu li a {
 	text-decoration: none;
-    color: inherit;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -118,10 +116,13 @@ h1 {
     line-height: 26px;
     font-weight: 700;
     text-align: center;
+    color: #000000;
 }
 
 h2 {
     margin: 29px 0;
+
+    color: #000000;
 }
 
 main {
@@ -156,6 +157,7 @@ main {
     line-height: 21px;
     font-weight: 700;
     text-align: center;
+    color: #000000;
 }
 
 .index-content-reason-number {
