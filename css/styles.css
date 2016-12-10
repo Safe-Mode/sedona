@@ -20,6 +20,8 @@ body {
 }
 
 .container {
+    position: relative;
+
 	max-width: 1200px;
     margin: 0 auto;
 
@@ -234,11 +236,33 @@ main {
 
 /*Футер*/
 
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 48px;
+	padding: 36px 0;
+
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 .footer-hashtag {
 	float: left;
     width: 33%;
+    margin-top: 13px;
 
     text-align: center;
+}
+
+.footer-hashtag a {
+    font-size: 21px;
+    line-height: 26px;
+	text-decoration: none;
+    color: #000000;
+    font-weight: 700;
 }
 
 .footer-social {
@@ -246,13 +270,33 @@ main {
     width: 33%;
 
     text-align: center;
+    font-size: 0;
 }
 
 .footer-copyright {
 	float: right;
     width: 33%;
+    margin-top: 4.5px;
 
     text-align: center;
+    font-size: 0;
+}
+
+.footer-copyright span {
+    display: inline-block;
+    margin-right: 8px;
+
+    font-size: 14px;
+    line-height: 26px;
+	vertical-align: middle;
+}
+
+.footer-copyright a {
+    display: inline-block;
+    height: 39px;
+
+    line-height: 26px;
+	vertical-align: middle;
 }
 
 
@@ -283,4 +327,19 @@ main {
 
     font-size: 21px;
     line-height: 26px;
+}
+
+.social-btn {
+    display: inline-block;
+    margin-right: 6px;
+	width: 46px;
+    height: 48px;
+
+    vertical-align: top;
+
+    background-color: #81b3d2;
+}
+
+.social-btn:last-child {
+    margin-right: 0;
 }
