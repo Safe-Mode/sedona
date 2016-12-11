@@ -386,8 +386,6 @@ main {
 
 .copyright-btn:hover {
 	background-position: 0 -50px;
-
-    transition: background-position 0.4s;
 }
 
 .copyright-btn:active {
