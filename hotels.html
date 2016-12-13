@@ -23,31 +23,37 @@
         <main>
             <section class="search-params">
                 <form action="echo.htmlacademy.ru">
-                    <fieldset>
-                        <legeng>Инфраструктура</legeng>
-                        <label><input type="checkbox">Бассейн</label>
-                        <label><input type="checkbox">Парковка</label>
-                        <label><input type="checkbox">Wi-Fi</label>
-                    </fieldset>
-                    <fieldset>
-                        <legeng>Тип жилья:</legeng>
-                        <label><input type="checkbox">Гостиница</label>
-                        <label><input type="checkbox">Мотель</label>
-                        <label><input type="checkbox">Апартаменты</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Стоимость в сутки (Р):</legend>
-                        <div class="price-output">
-                            <div class="price-output-min">От 0</div>
-                            <div class="price-output-max">До 3000</div>
+                    <div class="inner-columns clearfix">
+                        <div class="inner-column-left clearfix">
+                            <fieldset class="to-left">
+                                <legeng>Инфраструктура</legeng>
+                                <label><input type="checkbox">Бассейн</label>
+                                <label><input type="checkbox">Парковка</label>
+                                <label><input type="checkbox">Wi-Fi</label>
+                            </fieldset>
+                            <fieldset class="to-left">
+                                <legeng>Тип жилья:</legeng>
+                                <label><input type="checkbox">Гостиница</label>
+                                <label><input type="checkbox">Мотель</label>
+                                <label><input type="checkbox">Апартаменты</label>
+                            </fieldset>
                         </div>
-                        <div class="price-range">
-                            <div class="price-range-track"></div>
-                            <div class="price-range-thumb-min"></div>
-                            <div class="price-range-thumb-max"></div>
+                        <div class="inner-column-right">
+                            <fieldset>
+                                <legend>Стоимость в сутки (Р):</legend>
+                                <div class="price-output">
+                                    <div class="price-output-min">От 0</div>
+                                    <div class="price-output-max">До 3000</div>
+                                </div>
+                                <div class="price-range">
+                                    <div class="price-range-track"></div>
+                                    <div class="price-range-thumb-min"></div>
+                                    <div class="price-range-thumb-max"></div>
+                                </div>
+                            </fieldset>
+                            <a class="btn" href="#">Показать</a>
                         </div>
-                    </fieldset>
-                    <a class="btn" href="#">Показать</a>
+                    </div>
                 </form>
             </section>
             <section class="search-results">
