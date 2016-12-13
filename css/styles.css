@@ -330,7 +330,20 @@ main {
 
 /*Стили внутренней страницы*/
 
+.search-results-sorting-found,
+.search-results-sorting-options,
+.search-results-sorting-options h2 {
+    display: inline-block;
+}
 
+.search-results-sorting-indicators .icon-up-dir,
+.search-results-sorting-indicators .icon-down-dir {
+    font-size: 23px;
+}
+
+.search-results-hotels-item .item-image {
+	float: left;
+}
 
 
 /*Кнопки*/
