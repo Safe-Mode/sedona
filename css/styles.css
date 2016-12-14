@@ -141,6 +141,10 @@ main {
     padding-top: 60px;
 }
 
+.inner-page main {
+    padding-top: 0;
+}
+
 .reasons {
     margin-bottom: 58px;
 
@@ -329,6 +333,15 @@ main {
 
 
 /*Стили внутренней страницы*/
+
+.search-params {
+    padding: 30px 6%;
+
+    color: #ffffff;
+
+    background: #3d729c url(../img/sedona-background-blured.jpg) no-repeat center;
+    background-size: 100%;
+}
 
 .search-results-sorting-found,
 .search-results-sorting-options,
