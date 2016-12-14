@@ -372,6 +372,7 @@ main {
 	clear: both;
     float: right;
     width: 68.5%;
+    margin-bottom: 32px;
 }
 
 .price-range-thumb {
@@ -586,6 +587,16 @@ input[type="checkbox"]:checked + label::before {
 
 .copyright-btn:active {
 	background-position: 0 -100px;
+}
+
+.form-btn {
+    padding: 8px 35px;
+    margin-left: 46%;
+
+    font-weight: 400;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 
