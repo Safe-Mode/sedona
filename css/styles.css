@@ -87,7 +87,8 @@ body {
     text-align: right;
 }
 
-.main-menu li a {
+.main-menu li a,
+.main-menu li span {
 	text-decoration: none;
     color: #000000;
     font-weight: 700;
@@ -106,7 +107,7 @@ body {
 	padding-top: 76px;
 
     background: url(../img/mask.png) no-repeat center bottom,
-                #dfecf5 url(../img/header-background.jpg) no-repeat center 30%;
+                #dfecf5 url(../img/sedona-background.jpg) no-repeat center 30%;
     background-size: 100%;
 }
 
@@ -138,6 +139,10 @@ h2 {
 
 main {
     padding-top: 60px;
+}
+
+.inner-page main {
+    padding-top: 0;
 }
 
 .reasons {
@@ -258,6 +263,10 @@ main {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+.inner-page .main-footer {
+	position: static;
+}
+
 .footer-hashtag {
 	float: left;
     width: 33%;
@@ -311,16 +320,204 @@ main {
 	vertical-align: middle;
 }
 
-/*
-.footer-copyright a {
-    display: inline-block;
-    height: 39px;
 
-    line-height: 26px;
-	vertical-align: middle;
+/*Колонки*/
+
+.inner-column-left {
+    float: left;
 }
-*/
 
+.inner-column-right {
+    float: right;
+    width: 38.75%;
+}
+
+
+/*Стили внутренней страницы*/
+
+.search-params {
+    padding: 30px 6%;
+
+    color: #ffffff;
+
+    background: #3d729c url(../img/sedona-background-blured.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.search-params .price-output {
+	width: 68.5%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+
+    font-size: 0;
+
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.price-output div {
+	display: inline-block;
+    width: 48.5%;
+    height: 22px;
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.price-range {
+    position: relative;
+
+	clear: both;
+    float: right;
+    width: 68.5%;
+    margin-bottom: 32px;
+}
+
+.price-range-thumb {
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.price-range-thumb::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+
+    width: 5px;
+    height: 5px;
+
+	background-color: #ababab;
+    border-radius: 50%;
+}
+
+.price-range-thumb:hover::before {
+    background-color: #1c4f80;
+}
+
+.price-range-thumb-max {
+	left: 77%;
+}
+
+.price-range-track {
+    position: relative;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #ffffff;
+    opacity: 0.3;
+}
+
+.price-range-fill {
+	position: absolute;
+    top: 0;
+    right: 23%;
+    left: 0;
+
+    height: 2px;
+
+    background-color: #ffffff;
+}
+
+.search-params .price-output-min  {
+	border-right: 2px solid #ffffff;
+}
+
+.search-results-sorting-found,
+.search-results-sorting-options,
+.search-results-sorting-options h2 {
+    display: inline-block;
+}
+
+.search-results-sorting-indicators .icon-up-dir,
+.search-results-sorting-indicators .icon-down-dir {
+    font-size: 23px;
+}
+
+.search-results-hotels-item .item-image {
+	float: left;
+}
+
+.search-params fieldset {
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    padding-right: 3.9%;
+
+    border: none;
+}
+
+.search-params legend {
+	margin-bottom: 29px;
+
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.search-params h2 {
+	margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*Кастомные элементы*/
+
+/*Чекбоксы*/
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: block;
+    margin-bottom: 23px;
+
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:nth-of-type(3n) {
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] + label::before {
+    content: "\2610";
+
+    display: inline-block;
+    margin-right: 19px;
+
+    font-family: "symbols-sedona";
+    font-size: 26px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: "\2611";
+
+    display: inline-block;
+    margin-right: 15px;
+
+    font-family: "symbols-sedona";
+    font-size: 26px;
+    vertical-align: middle;
+}
 
 /*Кнопки*/
 
@@ -386,12 +583,20 @@ main {
 
 .copyright-btn:hover {
 	background-position: 0 -50px;
-
-    transition: background-position 0.4s;
 }
 
 .copyright-btn:active {
 	background-position: 0 -100px;
+}
+
+.form-btn {
+    padding: 8px 35px;
+    margin-left: 46%;
+
+    font-weight: 400;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
 
