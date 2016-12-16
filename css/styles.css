@@ -37,6 +37,10 @@ body {
     float: right;
 }
 
+.text-center {
+	text-align: center;
+}
+
 
 /*Хэдер*/
 
@@ -329,7 +333,7 @@ main {
 
 .inner-column-right {
     float: right;
-    width: 38.75%;
+    width: 27.5%;
 }
 
 
@@ -345,7 +349,7 @@ main {
 }
 
 .search-params .price-output {
-	width: 68.5%;
+	width: 99%;
     padding: 5px 0;
     margin-bottom: 20px;
 
@@ -370,8 +374,7 @@ main {
     position: relative;
 
 	clear: both;
-    float: right;
-    width: 68.5%;
+    width: 100%;
     margin-bottom: 32px;
 }
 
@@ -450,10 +453,10 @@ main {
 }
 
 .search-params fieldset {
-    width: 210px;
+    width: 150px;
     margin: 0;
+    margin-right: 90px;
     padding: 0;
-    padding-right: 3.9%;
 
     border: none;
 }
@@ -466,14 +469,9 @@ main {
     font-weight: 700;
 }
 
-.search-params h2 {
+fieldset.search-params-price {
 	margin: 0;
-    margin-bottom: 10px;
-
-    font-size: 16px;
-    line-height: 21px;
-    color: #ffffff;
-    text-align: center;
+    width: 100%;
 }
 
 
@@ -591,7 +589,6 @@ input[type="checkbox"]:checked + label::before {
 
 .form-btn {
     padding: 8px 35px;
-    margin-left: 46%;
 
     font-weight: 400;
 
@@ -603,12 +600,12 @@ input[type="checkbox"]:checked + label::before {
 /*Иконочный шрифт*/
 
 @font-face {
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+    font-family: "symbols-sedona";
+    src: url("../fonts/symbols-sedona.woff") format("woff"),
+        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
