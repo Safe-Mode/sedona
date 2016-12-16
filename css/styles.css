@@ -478,6 +478,38 @@ fieldset.search-params-price {
 	padding: 0 6%;
 }
 
+.search-results-sorting {
+	padding: 34px 0;
+}
+
+.search-results-sorting-found {
+	font-size: 21px;
+    line-height: 26px;
+}
+
+.search-results-sorting-options h2 {
+	font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.search-results-sorting-options .sorting-type {
+	font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+
+    border: 1px dotted #81b3d2;
+    opacity: 0.3;
+}
+
+.search-results-sorting-options .sorting-type-active {
+    color: #81b3d2;
+    opacity: 1;
+    border: none;
+}
+
 
 /*Кастомные элементы*/
 
