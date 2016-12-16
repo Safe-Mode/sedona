@@ -474,6 +474,10 @@ fieldset.search-params-price {
     width: 100%;
 }
 
+.search-results {
+	padding: 0 6%;
+}
+
 
 /*Кастомные элементы*/
 
