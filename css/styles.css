@@ -333,7 +333,6 @@ main {
 
 .inner-column-right {
     float: right;
-    width: 27.5%;
 }
 
 
@@ -346,6 +345,10 @@ main {
 
     background: #3d729c url(../img/sedona-background-blured.jpg) no-repeat center;
     background-size: 100%;
+}
+
+.search-params .inner-column-right {
+	width: 27.5%;
 }
 
 .search-params .price-output {
@@ -480,6 +483,7 @@ fieldset.search-params-price {
 
 .search-results-sorting {
 	padding: 34px 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .search-results-sorting-found {
@@ -494,6 +498,8 @@ fieldset.search-params-price {
 }
 
 .search-results-sorting-options .sorting-type {
+    margin-right: 30px;
+
 	font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -508,6 +514,26 @@ fieldset.search-params-price {
     color: #81b3d2;
     opacity: 1;
     border: none;
+}
+
+.search-results-sorting-found {
+	width: 135px;
+    margin-right: 30px;
+}
+
+.search-results-sorting-options h2 {
+    margin: 0;
+	margin-right: 40px;
+}
+
+.icon-dir {
+    color: #cccccc;
+    font-size: 23px;
+    line-height: 20px;
+}
+
+.icon-dir-active {
+	color: #81b3d2;
 }
 
 
