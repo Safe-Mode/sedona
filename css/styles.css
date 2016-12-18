@@ -536,6 +536,76 @@ fieldset.search-params-price {
 	color: #81b3d2;
 }
 
+.search-results-hotels-item {
+	padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-hotels .inner-column-left {
+	min-width: 525px;
+}
+
+.search-results-hotels .item-image {
+	margin-right: 30px;
+}
+
+.search-results-hotels img {
+	width: 135px;
+    height: 90px;
+}
+
+.search-results-hotels-item h2 {
+	margin: 0;
+    margin-bottom: 10px;
+    margin-top: -5px;
+
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.search-results-hotels-item span {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.search-results-hotels .item-description-type {
+	margin-right: 40px;
+}
+
+.item-description-row {
+	margin-bottom: 12px;
+}
+
+.item-description-row:last-child {
+    margin-bottom: 0;
+}
+
+.icon-star {
+	font-size: 19px;
+    line-height: 21px;
+    color: #81b3d2;
+}
+
+.search-results-hotels .item-status-stars {
+	margin-bottom: 40px;
+
+    text-align: right;
+}
+
+.search-results-hotels .item-status-rating {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 13px;
+	padding-bottom: 6px;
+    padding-left: 16px;
+
+    color: #666666;
+    font-size: 14px;
+    line-height: 21px;
+
+    background-color: #f2f2f2;
+}
+
 
 /*Кастомные элементы*/
 
@@ -583,7 +653,8 @@ input[type="checkbox"]:checked + label::before {
 
 .btn {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 3px 15px;
+    margin-right: 6px;
 
     vertical-align: top;
     font-size: 14px;
