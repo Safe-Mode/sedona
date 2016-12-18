@@ -37,6 +37,10 @@ body {
     float: right;
 }
 
+.text-center {
+	text-align: center;
+}
+
 
 /*Хэдер*/
 
@@ -87,19 +91,29 @@ body {
     text-align: right;
 }
 
-.main-menu li a,
-.main-menu li span {
+.main-menu a,
+.main-menu span {
 	text-decoration: none;
     color: #000000;
     font-weight: 700;
 }
 
-.main-menu li a:hover {
+.main-menu a:hover {
 	color: #81b3d2;
 }
 
-.main-menu li a:active {
+.main-menu a:active {
 	opacity: 0.3;
+}
+
+.main-menu-active,
+.main-menu-active a {
+	color: #766357;
+}
+
+.main-menu-active a:hover,
+.main-menu-active span:hover{
+	color: #604e43;
 }
 
 .sedona-promo {
@@ -329,7 +343,6 @@ main {
 
 .inner-column-right {
     float: right;
-    width: 38.75%;
 }
 
 
@@ -344,8 +357,12 @@ main {
     background-size: 100%;
 }
 
+.search-params .inner-column-right {
+	width: 27.5%;
+}
+
 .search-params .price-output {
-	width: 68.5%;
+	width: 99%;
     padding: 5px 0;
     margin-bottom: 20px;
 
@@ -370,8 +387,7 @@ main {
     position: relative;
 
 	clear: both;
-    float: right;
-    width: 68.5%;
+    width: 100%;
     margin-bottom: 32px;
 }
 
@@ -450,10 +466,10 @@ main {
 }
 
 .search-params fieldset {
-    width: 210px;
+    width: 150px;
     margin: 0;
+    margin-right: 90px;
     padding: 0;
-    padding-right: 3.9%;
 
     border: none;
 }
@@ -466,14 +482,171 @@ main {
     font-weight: 700;
 }
 
-.search-params h2 {
+fieldset.search-params-price {
+	margin: 0;
+    width: 100%;
+}
+
+.search-results {
+	padding: 0 6%;
+}
+
+.search-results-sorting {
+	padding: 34px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-sorting-found {
+	font-size: 21px;
+    line-height: 26px;
+}
+
+.search-results-sorting-options h2 {
+	font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.search-results-sorting-options .sorting-type {
+    margin-right: 30px;
+
+	font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+
+    border-bottom: 1px dotted #81b3d2;
+    opacity: 0.3;
+}
+
+.search-results-sorting-options .sorting-type:hover {
+    color: #81b3d2;
+    opacity: 1;
+}
+
+.search-results-sorting-options .sorting-type:active {
+    color: #000000;
+    opacity: 1;
+}
+
+.search-results-sorting-options .sorting-type-active {
+    color: #81b3d2;
+    opacity: 1;
+    border: none;
+}
+
+.search-results-sorting-found {
+	width: 135px;
+    margin-right: 30px;
+}
+
+.search-results-sorting-options h2 {
+    margin: 0;
+	margin-right: 40px;
+}
+
+.icon-dir {
+    color: #cccccc;
+    font-size: 23px;
+    line-height: 20px;
+
+    cursor: pointer;
+}
+
+.icon-dir:hover {
+    color: #000000;
+}
+
+.icon-dir:active {
+	color: #81b3d2;
+}
+
+.icon-dir-active {
+	color: #81b3d2;
+}
+
+.search-results-hotels-item {
+	padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-hotels .inner-column-left {
+	min-width: 525px;
+}
+
+.search-results-hotels .item-image {
+	margin-right: 30px;
+}
+
+.search-results-hotels img {
+	width: 135px;
+    height: 90px;
+}
+
+.search-results-hotels-item h2 {
 	margin: 0;
     margin-bottom: 10px;
+    margin-top: -5px;
 
-    font-size: 16px;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.search-results-hotels-item h2:hover {
+    color: #81b3d2;
+}
+
+.search-results-hotels h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-results-hotels h2 a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-results-hotels-item span {
+    font-size: 14px;
     line-height: 21px;
-    color: #ffffff;
-    text-align: center;
+}
+
+.search-results-hotels .item-description-type {
+	margin-right: 40px;
+}
+
+.item-description-row {
+	margin-bottom: 12px;
+}
+
+.item-description-row:last-child {
+    margin-bottom: 0;
+}
+
+.icon-star {
+	font-size: 19px;
+    line-height: 21px;
+    color: #81b3d2;
+}
+
+.search-results-hotels .item-status-stars {
+	margin-bottom: 40px;
+
+    text-align: right;
+}
+
+.search-results-hotels .item-status-rating {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 13px;
+	padding-bottom: 6px;
+    padding-left: 16px;
+
+    color: #666666;
+    font-size: 14px;
+    line-height: 21px;
+
+    background-color: #f2f2f2;
 }
 
 
@@ -508,6 +681,14 @@ input[type="checkbox"] + label::before {
     vertical-align: middle;
 }
 
+input[type="checkbox"] + label:hover::before {
+    color: #fefefe;
+}
+
+input[type="checkbox"]:disabled + label::before {
+    color: #6a6a6a;
+}
+
 input[type="checkbox"]:checked + label::before {
     content: "\2611";
 
@@ -519,11 +700,16 @@ input[type="checkbox"]:checked + label::before {
     vertical-align: middle;
 }
 
+input[type="checkbox"]:checked:disabled + label::before {
+    color: #6a6a6a;
+}
+
 /*Кнопки*/
 
 .btn {
     display: inline-block;
-    padding: 5px 15px;
+    padding: 3px 15px;
+    margin-right: 6px;
 
     vertical-align: top;
     font-size: 14px;
@@ -533,12 +719,32 @@ input[type="checkbox"]:checked + label::before {
     text-decoration: none;
 }
 
+.btn:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .btn-brown {
     background-color: #766357;
 }
 
+.btn-brown:hover {
+	background-color: #604e43;
+}
+
+.btn-brown:active {
+	background-color: #503e33;
+}
+
 .btn-blue {
     background-color: #81b3d2;
+}
+
+.btn-blue:hover {
+    background-color: #669ec0;
+}
+
+.btn-blue:active {
+	background-color: #5496bd;
 }
 
 .btn-hotels-search {
@@ -550,7 +756,7 @@ input[type="checkbox"]:checked + label::before {
 
 .social-btn {
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 5px;
 	width: 46px;
     height: 48px;
 
@@ -591,7 +797,6 @@ input[type="checkbox"]:checked + label::before {
 
 .form-btn {
     padding: 8px 35px;
-    margin-left: 46%;
 
     font-weight: 400;
 
@@ -599,16 +804,21 @@ input[type="checkbox"]:checked + label::before {
     border-radius: 2px;
 }
 
+.form-btn:hover {
+	background-color: #ffffff;
+    color: #000000;
+}
+
 
 /*Иконочный шрифт*/
 
 @font-face {
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+    font-family: "symbols-sedona";
+    src: url("../fonts/symbols-sedona.woff") format("woff"),
+        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,

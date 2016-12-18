@@ -16,7 +16,7 @@
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта штата</a></li>
-                    <li><span>Гостиницы</span></li>
+                    <li class="main-menu-active"><a href="#">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,18 +43,20 @@
                             <label for="appartments">Апартаменты</label>
                         </fieldset>
                     </div>
-                    <div class="inner-column-right clearfix">
-                        <h2>Стоимость в сутки (Р):</h2>
-                        <div class="price-output to-right">
-                            <div class="price-output-min">От 0</div>
-                            <div class="price-output-max">До 3000</div>
-                        </div>
-                        <div class="price-range">
-                            <div class="price-range-track"></div>
-                            <div class="price-range-fill"></div>
-                            <div class="price-range-thumb price-range-thumb-min"></div>
-                            <div class="price-range-thumb price-range-thumb-max"></div>
-                        </div>
+                    <div class="inner-column-right text-center clearfix">
+                        <fieldset class="search-params-price">
+                            <legend>Стоимость в сутки (Р):</legend>
+                            <div class="price-output to-right">
+                                <div class="price-output-min">От 0</div>
+                                <div class="price-output-max">До 3000</div>
+                            </div>
+                            <div class="price-range">
+                                <div class="price-range-track"></div>
+                                <div class="price-range-fill"></div>
+                                <div class="price-range-thumb price-range-thumb-min"></div>
+                                <div class="price-range-thumb price-range-thumb-max"></div>
+                            </div>
+                        </fieldset>
                         <a class="btn form-btn" href="#">Показать</a>
                     </div>
                 </form>
@@ -65,15 +67,15 @@
                         <b class="search-results-sorting-found">Найдено: 3</b>
                         <section class="search-results-sorting-options">
                             <h2>Cортировка:</h2>
-                            <a href="#" class="sorting-type sorting-type-current">По цене</a>
+                            <span class="sorting-type sorting-type-active">По цене</span>
                             <a href="#" class="sorting-type">По типу</a>
                             <a href="#" class="sorting-type">По рейтингу</a>
                         </section>
                     </div>
                     <div class="inner-column-right">
                         <div class="search-results-sorting-indicators">
-                            <i class="icon-up-dir"></i>
-                            <i class="icon-down-dir"></i>
+                            <a class="icon-dir icon-up-dir"></a>
+                            <a class="icon-dir icon-down-dir icon-dir-active"></a>
                         </div>
                     </div>
                 </div>
@@ -82,11 +84,15 @@
                         <div class="inner-column-left">
                             <div class="item-image"><img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90"></div>
                             <div class="item-description">
-                                <h2>Amara Resort \& Spa</h2>
-                                <span class="item-description-type">Гостиница</span>
-                                <span class="item-description-price">От 3500 р.</span>
-                                <a href="#" class="btn">Подробнее</a>
-                                <a href="#" class="btn">Забронировать</a>
+                                <h2><a href="#">Amara Resort \& Spa</a></h2>
+                                <div class="item-description-row">
+                                    <span class="item-description-type">Гостиница</span>
+                                    <span class="item-description-price">От 3500 р.</span>
+                                </div>
+                                <div class="item-description-row">
+                                    <a href="#" class="btn btn-blue">Подробнее</a>
+                                    <a href="#" class="btn btn-brown">Забронировать</a>
+                                </div>
                             </div>
                         </div>
                         <div class="inner-column-right">
@@ -105,11 +111,15 @@
                         <div class="inner-column-left">
                             <div class="item-image"><img src="img/desert-quail-inn.jpg" alt="Desert Quail Inn" width="135" height="90"></div>
                             <div class="item-description">
-                                <h2>Desert Quail Inn</h2>
-                                <span class="item-description-type">Мотель</span>
-                                <span class="item-description-price">От 2000 р.</span>
-                                <a href="#" class="btn">Подробнее</a>
-                                <a href="#" class="btn">Забронировать</a>
+                                <h2><a href="#">Desert Quail Inn</a></h2>
+                                <div class="item-description-row">
+                                    <span class="item-description-type">Мотель</span>
+                                    <span class="item-description-price">От 2000 р.</span>
+                                </div>
+                                <div class="item-description-row">
+                                    <a href="#" class="btn btn-blue">Подробнее</a>
+                                    <a href="#" class="btn btn-brown">Забронировать</a>
+                                </div>
                             </div>
                         </div>
                         <div class="inner-column-right">
@@ -126,11 +136,15 @@
                         <div class="inner-column-left">
                             <div class="item-image"><img src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90"></div>
                             <div class="item-description">
-                                <h2>Villas at Poco Diablo</h2>
-                                <span class="item-description-type">Апартаменты</span>
-                                <span class="item-description-price">От 4000 р.</span>
-                                <a href="#" class="btn">Подробнее</a>
-                                <a href="#" class="btn">Забронировать</a>
+                                <h2><a href="#">Villas at Poco Diablo</a></h2>
+                                <div class="item-description-row">
+                                    <span class="item-description-type">Апартаменты</span>
+                                    <span class="item-description-price">От 4000 р.</span>
+                                </div>
+                                <div class="item-description-row">
+                                    <a href="#" class="btn btn-blue">Подробнее</a>
+                                    <a href="#" class="btn btn-brown">Забронировать</a>
+                                </div>
                             </div>
                         </div>
                         <div class="inner-column-right">
