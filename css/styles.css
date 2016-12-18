@@ -91,19 +91,29 @@ body {
     text-align: right;
 }
 
-.main-menu li a,
-.main-menu li span {
+.main-menu a,
+.main-menu span {
 	text-decoration: none;
     color: #000000;
     font-weight: 700;
 }
 
-.main-menu li a:hover {
+.main-menu a:hover {
 	color: #81b3d2;
 }
 
-.main-menu li a:active {
+.main-menu a:active {
 	opacity: 0.3;
+}
+
+.main-menu-active,
+.main-menu-active a {
+	color: #766357;
+}
+
+.main-menu-active a:hover,
+.main-menu-active span:hover{
+	color: #604e43;
 }
 
 .sedona-promo {
@@ -506,8 +516,18 @@ fieldset.search-params-price {
     text-decoration: none;
     color: #000000;
 
-    border: 1px dotted #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
     opacity: 0.3;
+}
+
+.search-results-sorting-options .sorting-type:hover {
+    color: #81b3d2;
+    opacity: 1;
+}
+
+.search-results-sorting-options .sorting-type:active {
+    color: #000000;
+    opacity: 1;
 }
 
 .search-results-sorting-options .sorting-type-active {
@@ -530,6 +550,16 @@ fieldset.search-params-price {
     color: #cccccc;
     font-size: 23px;
     line-height: 20px;
+
+    cursor: pointer;
+}
+
+.icon-dir:hover {
+    color: #000000;
+}
+
+.icon-dir:active {
+	color: #81b3d2;
 }
 
 .icon-dir-active {
@@ -561,6 +591,19 @@ fieldset.search-params-price {
 
     font-size: 21px;
     line-height: 26px;
+}
+
+.search-results-hotels-item h2:hover {
+    color: #81b3d2;
+}
+
+.search-results-hotels h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.search-results-hotels h2 a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .search-results-hotels-item span {
@@ -638,6 +681,14 @@ input[type="checkbox"] + label::before {
     vertical-align: middle;
 }
 
+input[type="checkbox"] + label:hover::before {
+    color: #fefefe;
+}
+
+input[type="checkbox"]:disabled + label::before {
+    color: #6a6a6a;
+}
+
 input[type="checkbox"]:checked + label::before {
     content: "\2611";
 
@@ -647,6 +698,10 @@ input[type="checkbox"]:checked + label::before {
     font-family: "symbols-sedona";
     font-size: 26px;
     vertical-align: middle;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+    color: #6a6a6a;
 }
 
 /*Кнопки*/
@@ -664,12 +719,32 @@ input[type="checkbox"]:checked + label::before {
     text-decoration: none;
 }
 
+.btn:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .btn-brown {
     background-color: #766357;
 }
 
+.btn-brown:hover {
+	background-color: #604e43;
+}
+
+.btn-brown:active {
+	background-color: #503e33;
+}
+
 .btn-blue {
     background-color: #81b3d2;
+}
+
+.btn-blue:hover {
+    background-color: #669ec0;
+}
+
+.btn-blue:active {
+	background-color: #5496bd;
 }
 
 .btn-hotels-search {
@@ -681,7 +756,7 @@ input[type="checkbox"]:checked + label::before {
 
 .social-btn {
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 5px;
 	width: 46px;
     height: 48px;
 
@@ -727,6 +802,11 @@ input[type="checkbox"]:checked + label::before {
 
     border: 2px solid #ffffff;
     border-radius: 2px;
+}
+
+.form-btn:hover {
+	background-color: #ffffff;
+    color: #000000;
 }
 
 
