@@ -536,6 +536,10 @@ fieldset.search-params-price {
     border: none;
 }
 
+.search-results-sorting-options .sorting-type-active:active {
+    color: #81b3d2;
+}
+
 .search-results-sorting-found {
 	width: 135px;
     margin-right: 30px;
