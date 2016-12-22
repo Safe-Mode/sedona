@@ -242,6 +242,10 @@ main {
 }
 
 .index-search {
+    position: relative;
+    
+    width: 568px;
+    margin: 0 auto;
     min-height: 236px;
     padding-top: 55px;
 
@@ -654,6 +658,21 @@ fieldset.search-params-price {
 }
 
 
+/*Форма поиска*/
+
+.index-search-hotels {
+    position: absolute;
+    top: 100%;
+    
+    width: 458px;
+    min-height: 285px;
+    padding: 55px;
+    
+    background-color: #ffffff;
+    box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+}
+
+
 /*Кастомные элементы*/
 
 /*Чекбоксы*/
@@ -752,10 +771,12 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .btn-hotels-search {
-    padding: 32px 140px;
+    width: 568px;
+    padding: 32px 0;
 
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
 }
 
 .social-btn {
