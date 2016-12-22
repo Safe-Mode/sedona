@@ -672,6 +672,50 @@ fieldset.search-params-price {
     box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
 
+.index-search-hotels .form-table {
+    display: table;
+}
+
+.index-search-hotels .form-row {
+    display: table-row;
+}
+
+.index-search-hotels .form-cell {
+    display: table-cell;
+/*    width: 25%;*/
+}
+
+.index-search-hotels .form-cell-group {
+    display: table-row-group;
+}
+
+.index-search-hotels .form-col-025 {
+    width: 25%;
+}
+
+.index-search-hotels .form-col-075 {
+    width: 75%;
+}
+
+.index-search-hotels input {
+    display: block;
+    width: 100%;
+    
+    font-family: PTSans;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.index-search-hotels label { 
+    font-weight: 700;
+}
+
 
 /*Кастомные элементы*/
 
@@ -733,6 +777,7 @@ input[type="checkbox"]:checked:disabled + label::before {
     display: inline-block;
     padding: 3px 15px;
     margin-right: 6px;
+    border: none;
 
     vertical-align: top;
     font-size: 14px;
@@ -740,6 +785,7 @@ input[type="checkbox"]:checked:disabled + label::before {
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btn:active {
@@ -777,6 +823,11 @@ input[type="checkbox"]:checked:disabled + label::before {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+}
+
+.btn-hotels-search-form {
+    display: block;
+    width: 100%;
 }
 
 .social-btn {

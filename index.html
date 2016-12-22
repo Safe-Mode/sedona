@@ -84,16 +84,32 @@
                 <b class="index-search-title">Заинтересовались?</b>
                 <p>Укажите предполагаемые даты поездки,<br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
                 <a class="btn btn-hotels-search btn-brown" href="#">Поиск гостиницы в Седоне</a>
-                <form class="index-search-hotels" action="echo.htmlacademy.ru" method="get">
-                    <label for="date-on">Дата заезда:</label>
-                    <input type="text" id="date-on">
-                    <label for="date-off">Дата выезда:</label>
-                    <input type="text" id="date-off">
-                    <label for="adult-count">Взрослые:</label>
-                    <input type="text" id="adult-count">
-                    <label for="kids-count">Дети:</label>
-                    <input type="text" id="kids-count">
-                    <button type="button">Найти</button>
+                <form class="index-search-hotels" action="echo.htmlacademy.ru" method="get">  
+                    <div class="form-table">
+                        <div class="form-row">
+                            <label class="form-cell" for="date-on">Дата заезда:</label>
+                            <div class="form-cell-group">
+                                <input class="form-cell" type="text" id="date-on">
+                                <div class="form-cell"></div>
+                                <div class="form-cell"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-cell" for="date-off">Дата выезда:</label>
+                            <div class="form-cell-group">
+                                <input class="form-cell" type="text" id="date-off">
+                                <div class="form-cell"></div>
+                                <div class="form-cell"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="form-cell" for="adult-count">Взрослые:</label>
+                            <input class="form-cell" type="text" id="adult-count"> 
+                            <label class="form-cell" for="kids-count">Дети:</label>
+                            <input class="form-cell" type="text" id="kids-count">
+                        </div>
+                    </div>
+                    <button class="btn btn-blue btn-hotels-search-form" type="button">Найти</button>
                 </form>
             </div>
         </main>
