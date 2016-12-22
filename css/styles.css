@@ -732,8 +732,13 @@ fieldset.search-params-price {
     background-color: #f2f2f2;
 }
 
+.index-search-hotels input:hover {
+	background-color: #ebebeb;
+}
+
 .index-search-hotels input:focus {
     outline: 2px solid #e5e5e5;
+    background-color: #ffffff;
 }
 
 .input.count-field {
@@ -757,6 +762,32 @@ fieldset.search-params-price {
 .index-search-hotels .form-row-4 > label.form-cell:nth-of-type(2n) {
     padding-right: 30px;
     text-align: right;
+}
+
+.date-field {
+	position: relative;
+}
+
+.date-field::after {
+	content: "\e800";
+    position: absolute;
+    top: 8px;
+    right: 10px;
+
+    font-family: "symbols-sedona";
+    color: #c2c2c2;
+    font-size: 21px;
+    line-height: 26px;
+
+    cursor: pointer;
+}
+
+.date-field:hover::after {
+    color: #000000;
+}
+
+.date-field:active::after {
+    color: #81b3d2;
 }
 
 
@@ -950,6 +981,14 @@ input.count-field {
 
 .btn-count {
     cursor: pointer;
+}
+
+.btn-count:hover {
+    color: #000000;
+}
+
+.btn-count:active {
+    color: #81b3d2;
 }
 
 .icon-plus,
