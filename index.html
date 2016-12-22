@@ -86,27 +86,45 @@
                 <a class="btn btn-hotels-search btn-brown" href="#">Поиск гостиницы в Седоне</a>
                 <form class="index-search-hotels" action="echo.htmlacademy.ru" method="get">  
                     <div class="form-table">
+
+                        <!--Колонки для таблицы формы-->
+                        <div class="form-column form-column-25"></div>
+                        <div class="form-column form-column-75"></div>
+
                         <div class="form-row">
                             <label class="form-cell" for="date-on">Дата заезда:</label>
-                            <div class="form-cell-group">
-                                <input class="form-cell" type="text" id="date-on">
-                                <div class="form-cell"></div>
-                                <div class="form-cell"></div>
+                            <div class="form-cell">
+                                <input class="date-field" type="text" id="date-on">
                             </div>
                         </div>
                         <div class="form-row">
                             <label class="form-cell" for="date-off">Дата выезда:</label>
-                            <div class="form-cell-group">
-                                <input class="form-cell" type="text" id="date-off">
-                                <div class="form-cell"></div>
-                                <div class="form-cell"></div>
+                            <div class="form-cell">
+                                <input class="date-field" type="text" id="date-off">
                             </div>
                         </div>
-                        <div class="form-row">
+                    </div>
+                    <div class="form-table single-row-table">
+
+                        <!--Колонки для таблицы формы-->
+                        <div class="form-column form-column-25"></div>
+                        <div class="form-column form-column-25"></div>
+                        <div class="form-column form-column-25"></div>
+                        <div class="form-column form-column-25"></div>
+
+                        <div class="form-row form-row-4">
                             <label class="form-cell" for="adult-count">Взрослые:</label>
-                            <input class="form-cell" type="text" id="adult-count"> 
+                            <div class="form-cell">
+                                <div class="icon-minus btn-count"></div>
+                                <input class="count-field" type="text" id="adult-count" value="2">
+                                <div class="icon-plus btn-count"></div>
+                            </div>
                             <label class="form-cell" for="kids-count">Дети:</label>
-                            <input class="form-cell" type="text" id="kids-count">
+                            <div class="form-cell">
+                                <div class="icon-minus btn-count"></div>
+                                <input class="count-field" type="text" id="kids-count" value="0">
+                                <div class="icon-plus btn-count"></div>
+                            </div>
                         </div>
                     </div>
                     <button class="btn btn-blue btn-hotels-search-form" type="button">Найти</button>
