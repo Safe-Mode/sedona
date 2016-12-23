@@ -676,6 +676,7 @@ fieldset.search-params-price {
 
 .index-search-hotels-show {
     display: block;
+    animation: slide 2s;
 }
 
 .index-search-hotels .form-table {
@@ -1004,6 +1005,15 @@ input.count-field {
     vertical-align: middle;
 }
 
+
+/*Анимации*/
+
+@keyframes slide {
+    0% { transform: translateY(2000px) }
+    70% { transform: translateY(30px) }
+    90% { transform: translateY(10px) }
+    100% {transform: translateY(0) }
+}
 
 /*Иконочный шрифт*/
 
