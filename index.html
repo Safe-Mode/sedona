@@ -84,7 +84,7 @@
                 <b class="index-search-title">Заинтересовались?</b>
                 <p>Укажите предполагаемые даты поездки,<br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
                 <a class="btn btn-hotels-search btn-brown" href="#">Поиск гостиницы в Седоне</a>
-                <form class="index-search-hotels" action="echo.htmlacademy.ru" method="get">  
+                <form class="index-search-hotels" action="https://echo.htmlacademy.ru" method="get">
                     <div class="form-table">
 
                         <!--Колонки для таблицы формы-->
@@ -94,13 +94,13 @@
                         <div class="form-row">
                             <label class="form-cell" for="date-on">Дата заезда:</label>
                             <div class="form-cell date-field">
-                                <input type="text" id="date-on" value="24 Апреля 2016">
+                                <input type="text" id="date-on" name="date-on" value="24 Апреля 2016">
                             </div>
                         </div>
                         <div class="form-row">
                             <label class="form-cell" for="date-off">Дата выезда:</label>
                             <div class="form-cell date-field">
-                                <input class="date-field" type="text" id="date-off" value="4 июля 2016">
+                                <input class="date-field" type="text" id="date-off" name="date-off" value="4 июля 2016">
                             </div>
                         </div>
                     </div>
@@ -116,18 +116,18 @@
                             <label class="form-cell" for="adult-count">Взрослые:</label>
                             <div class="form-cell">
                                 <div class="icon-minus btn-count"></div>
-                                <input class="count-field" type="text" id="adult-count" value="2">
+                                <input class="count-field" type="text" id="adult-count" name="adult-count" value="2">
                                 <div class="icon-plus btn-count"></div>
                             </div>
                             <label class="form-cell" for="kids-count">Дети:</label>
                             <div class="form-cell">
                                 <div class="icon-minus btn-count"></div>
-                                <input class="count-field" type="text" id="kids-count" value="0">
+                                <input class="count-field" type="text" id="kids-count" name="kids-count" value="0">
                                 <div class="icon-plus btn-count"></div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-blue btn-hotels-search-form" type="button">Найти</button>
+                    <button class="btn btn-blue btn-hotels-search-form" type="submit">Найти</button>
                 </form>
             </div>
         </main>
@@ -147,5 +147,8 @@
             </section>
         </footer>
     </div>
+
+    <!--Скрипт всплывающей формы поиска отеля-->
+    <script src="js/popup.js"></script>
 </body>
 </html>
