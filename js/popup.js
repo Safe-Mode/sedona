@@ -17,3 +17,9 @@ form.addEventListener("submit", function(event) {
         console.log('Введи');
     }
 });
+
+window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 27 && form.classList.contains("index-search-hotels-show")) {
+        form.classList.remove("index-search-hotels-show");
+    }
+});
