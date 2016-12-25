@@ -3,15 +3,24 @@
 var button = document.querySelector(".btn-hotels-search"),
     form = document.querySelector("form"),
     dateOn = form.querySelector("[name=date-on]"),
-    dateOff = form.querySelector("[name=date-off]");
+    dateOff = form.querySelector("[name=date-off]"),
+    formStyle = getComputedStyle(form);
 
 button.addEventListener("click", function(event) {
     event.preventDefault();
     form.classList.toggle("index-search-hotels-show");
-    dateOn.focus();
 
-    if (form.classList.contains("modal-error")) {
-        form.classList.remove("modal-error");
+    var interval = (function() {
+        var value = formStyle.animationDuration,
+            numValue = +value.slice(0, value.length - 1);
+
+        return numValue * 1000;
+    })();
+
+    if (form.classList.contains("index-search-hotels-show")) {
+        setTimeout(function() {
+            dateOn.focus();
+        }, interval);
     }
 });
 
