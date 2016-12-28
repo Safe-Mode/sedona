@@ -21,7 +21,6 @@ body {
 
 .container {
     position: relative;
-    overflow: hidden;
 
 	max-width: 1200px;
     margin: 0 auto;
@@ -679,7 +678,7 @@ fieldset.search-params-price {
 
 .index-search-hotels-show {
     display: block;
-    animation: slide 0.6s;
+    animation: appearance 0.8s;
 }
 
 .index-search-hotels .form-table {
@@ -808,7 +807,8 @@ fieldset.search-params-price {
 
 /*Чекбоксы*/
 
-input[type="checkbox"] {
+input[type="checkbox"]:enabled,
+input[type="checkbox"]:disabled {
     display: none;
 }
 
@@ -823,11 +823,14 @@ input[type="checkbox"] + label:nth-of-type(3n) {
     margin-bottom: 0;
 }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"]:enabled + label::before,
+input[type="checkbox"]:disabled + label::before {
     content: "\2610";
 
     display: inline-block;
-    margin-right: 19px;
+    width: 26px;
+    height: 22px;
+    margin-right: 17px;
 
     font-family: "symbols-sedona";
     font-size: 26px;
@@ -847,7 +850,8 @@ input[type="checkbox"]:checked + label::before {
     content: "\2611";
 
     display: inline-block;
-    margin-right: 15px;
+    width: 26px;
+    height: 22px;
 
     font-family: "symbols-sedona";
     font-size: 26px;
@@ -906,6 +910,9 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .btn-hotels-search {
+    position: relative;
+    z-index: 20;
+
     width: 568px;
     padding: 32px 0;
 
@@ -1015,11 +1022,23 @@ input.count-field {
 
 /*Анимации*/
 
-@keyframes slide {
-    0% { transform: translateY(2000px); }
-    70% { transform: translateY(30px); }
-    90% { transform: translateY(10px); }
-    100% {transform: translateY(0); }
+@keyframes appearance {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    10% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes shake {
@@ -1070,3 +1089,9 @@ input.count-field {
 .icon-plus::before { content: "\e801"; } /* "" */
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
+
+iframe {
+    width: 100%;
+    height: 593px;
+    border: 0;
+}

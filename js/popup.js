@@ -10,7 +10,7 @@ button.addEventListener("click", function(event) {
     event.preventDefault();
     form.classList.toggle("index-search-hotels-show");
 
-    var interval = (function() {
+    var delay = (function() {
         var value = formStyle.animationDuration,
             numValue = +value.slice(0, value.length - 1);
 
@@ -20,7 +20,7 @@ button.addEventListener("click", function(event) {
     if (form.classList.contains("index-search-hotels-show")) {
         setTimeout(function() {
             dateOn.focus();
-        }, interval);
+        }, delay);
     }
 });
 
